@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <style type="text/css">
+        <!--
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        -->
+    </style>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript">
+
+        function flushCode(){
+            document.getElementById("codeimg").src = "RandomServlet?random=" + Math.random();
+        }
+
+    </script>
+</head>
+
+<body style="BACKGROUND-COLOR: #ebf4fd">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td height="238" background="images/top02.gif">
+            <img src="images/main.jpg" width="100%" height="238" />
+        </td>
+    </tr>
+</table>
+<table width="562" border="0" align="center" cellpadding="0"
+       cellspacing="0" class="right-table03">
+    <tr>
+        <td width="221">
+            <table width="95%" border="0" cellpadding="0" cellspacing="0"
+                   class="login-text01">
+
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                               class="login-text01">
+                            <tr>
+                                <td align="center">
+                                    <img src="images/ico13.gif" width="107" height="97" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40" align="center">
+                                    &nbsp;
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>
+                        <img src="images/line01.gif" width="5" height="292" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <p style="color: red" th:text="${message}" th:if="${not #strings.isEmpty(message)}"></p>
+            <form method="post">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                    <tr>
+                        <td width="31%" height="35" class="login-text02">
+                            用户名称：
+                            <br />
+                        </td>
+                        <td width="49%">
+                            <input id="username" name="username" type="text" size="30" style="width:90px;"/>
+
+                            <select id="usertype" name="type" class="textarea">
+                                <option value="1">社区成员</option>
+                                <option value="2">管理员</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="35" class="login-text02" >
+                            密&nbsp;&nbsp;&nbsp;码：
+                            <br />
+                        </td>
+                        <td>
+                            <input id="password" name="password" type="password" size="33" style="width:90px;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="35">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <input name="Submit2" type="button" class="right-button01"
+                                   value="确认登陆"  onclick="dologin()" />
+                            <input name="Submit232" type="reset" class="right-button02"
+                                   value="重 置" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript" src="jquery/jquery-form/jquery-form.min.js"></script>
+<script type="text/javascript">
+function dologin() {
+var username = $("#username");
+var password = $("#password");
+var usertype = $("#usertype");
+
+
+
+    $.ajax({
+        type:"post",
+        data:{
+            username:username.val(),
+            usertype:usertype.val(),
+            password:password.val()
+        },
+        url:"/login",
+        beforeSend:function () {
+            return true;
+        },
+        success:function (result) {
+            if(result.success){
+                if("1"==usertype.val()){
+                    window.location.href="/index1";
+                }else if("2"==usertype.val()){
+                    window.location.href="/index";
+                }
+            }else {
+                layer.msg(result.message,{time:1000,icon:5,shift:6});
+            }
+        },
+        error:function () {
+            alert("error");
+        }
+    })
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,2466 @@
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0px;
+	font-size: 12px;
+}
+
+/* 行政许可  */
+.topxktable {
+	background-image: url(../images/imgIndex/top_flat_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政处罚 */
+.topcftable {
+	background-image: url(../images/imgIndex/top_punish_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+.b_remark {
+	background-color: #87ceeb;
+	color: #fff;
+	font-size: 26pt;
+	text-align: left;
+	FONT-FAMILY: "宋体";
+}
+/* 行政征收 */
+.topzstable {
+	background-image: url(../images/imgIndex/top_exporp_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政强制 */
+.topqztable {
+	background-image: url(../images/imgIndex/top_force_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政审批 */
+.topsptable {
+	background-image: url(../images/imgIndex/top_approval_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政给付 */
+.topjftable {
+	background-image: url(../images/imgIndex/top_handin_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政奖励 */
+.topjltable {
+	background-image: url(../images/imgIndex/top_encouragement_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 处理办件 */
+.btnClbj {
+	background-image: url(../images/imgIndex/clbj.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 删除办件 */
+.btnScbj {
+	background-image: url(../images/imgIndex/scbj.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.addPRom {
+	background-image: url(../images/imgIndex/addPRom.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.addPNew {
+	background-image: url(../images/imgIndex/addPNew.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 行政确认 */
+.topqrtable {
+	background-image: url(../images/imgIndex/top_conf_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政征用 */
+.topzytable {
+	background-image: url(../images/imgIndex/top_requisition_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 行政裁决 */
+.topcjtable {
+	background-image: url(../images/imgIndex/top_ruling_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 其他权力 */
+.topqttable {
+	background-image: url(../images/imgIndex/top_other_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 电子监察 */
+.topjctable {
+	background-image: url(../images/imgIndex/top_jc_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 法制监督 */
+.topfztable {
+	background-image: url(../images/imgIndex/top_monitor_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+.zc_hz {
+	background-image: url(../images/imgIndex/hz.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 在职 */
+.zc_zz {
+	background-image: url(../images/imgIndex/zz.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 不予注册 */
+.zc_byzc {
+	background-image: url(../images/imgIndex/byzc.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 免于注册 */
+.zc_myzc {
+	background-image: url(../images/imgIndex/myzc.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 暂扣 */
+.zc_zk {
+	background-image: url(../images/imgIndex/zk.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 吊销 */
+.zc_dx {
+	background-image: url(../images/imgIndex/dx.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 注销 */
+.zc_zx {
+	background-image: url(../images/imgIndex/zx.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 有效 */
+.zc_yx {
+	background-image: url(../images/imgIndex/yx.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 生成备案报告 */
+.zc_scbabg {
+	background-image: url(../images/imgIndex/scbabg.jpg);
+	height: 24px;
+	width: 126px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 生成备案报告 */
+.zc_scbayjs {
+	background-image: url(../images/imgIndex/scbajys.jpg);
+	height: 24px;
+	width: 126px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+.zc_ckbabg {
+	background-image: url(../images/imgIndex/ckbabg.jpg);
+	height: 24px;
+	width: 126px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 综合管理 */
+.topmgrtable {
+	background-image: url(../images/imgIndex/top_manager_centit.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center
+}
+
+.jcmenutable {
+	height: 30px;
+	width: 1000px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #006699
+}
+
+.managemenutable {
+	height: 30px;
+	width: 300px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #006699;
+	margin-left: 15px;
+}
+
+.menubg {
+	background-image: url(../images/imgIndex/menubg_04.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 80px;
+	height: 30px;
+	padding-left: 5px;
+	padding-top: 2px;
+	cursor: hand;
+	text-align: center;
+}
+
+.topgltable {
+	background-image: url(../images/imgIndex/main_04.jpg);
+	background-repeat: repeat-x;
+	background-position: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+/* 全屏 */
+.btnFullScreen {
+	background-image: url(../images/imgIndex/qp.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 查看绩效规则 */
+.btnEffRule {
+	background-image: url(../images/imgIndex/ck.jpg);
+	height: 24px;
+	width: 126px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.leftbg {
+	background-repeat: repeat-y;
+	background-position: left top;
+	width: 223px;
+}
+
+.con_t1 {
+	background: url(../images/imgIndex/bggray.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	font-size: 12px;
+	padding: 3px;
+}
+
+.con_t2 {
+	font-size: 12px;
+	padding: 3px;
+}
+
+.dotblue {
+	background: url(../images/imgIndex/dot_blue.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 40px;
+	font-size: 12px;
+}
+
+.dotgray {
+	background: url(../images/imgIndex/dot_gray.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 32px;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.dotgray2 {
+	background: url(../images/imgIndex/dot_gray.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 32px;
+	line-height: 30px;
+	background-color: #F6F6F6;
+	font-size: 12px;
+}
+
+.dotgreen {
+	background: url(../images/imgIndex/greenline.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 48px;
+	font-size: 12px;
+}
+
+.linepic {
+	background: url(../images/imgIndex/linepic.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 38px;
+	font-size: 12px;
+}
+
+.leftgray {
+	background: url(../images/imgIndex/dot_gray.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 22px;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.leftgray2 {
+	background: url(../images/imgIndex/dot_gray.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 22px;
+	line-height: 26px;
+	background-color: #F6F6F6;
+	font-size: 12px;
+}
+
+.table {
+	border: 1px solid #59b7e5;
+	height: 250px;
+	font-size: 12px;
+}
+
+.table td {
+	color: #009999;
+	padding-left: 5px;
+	padding-top: 2px;
+	font-size: 12px;
+}
+
+.table td a:link {
+	color: #006699;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.table td a:visited {
+	color: #006699;
+}
+
+.table td a:activeactive {
+	color: #006699;
+}
+
+.table td a:hover {
+	color: #ff6699;
+}
+
+.tablewhite {
+	border: 0px solid #fff;
+}
+
+.tablewhite td {
+	color: #006699;
+	padding-left: 2px;
+	font-size: 12px;
+}
+
+.tablegreen {
+	border: 1px solid #339900;
+	font-size: 12px;
+}
+
+.tablegreen td {
+	color: #006699;
+	padding-left: 2px;
+	font-size: 12px;
+}
+
+.tablegreen td a:link {
+	color: #006699;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.tablegreen td a:visited {
+	color: #006699;
+}
+
+.tablegreen td a:activeactive {
+	color: #006699;
+}
+
+.tablegreen td a:hover {
+	color: #ff6699;
+}
+
+.tb_t {
+	margin: 5px;
+}
+
+.fontred {
+	color: #FF0000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.fontorange {
+	color: #FF9900;
+	font-size: 12px;
+}
+
+.fontblak {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.fontorange1 {
+	color: #F9F900;
+	font-size: 12px;
+}
+
+.fontgreen {
+	color: #339900;
+	font-size: 12px;
+}
+
+.fontblue {
+	color: #003366;
+	font-size: 12px;
+}
+
+.fonttitle {
+	color: #3333CC;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.fontde {
+	color: #996600;
+	font-size: 12px;
+}
+
+.fontsize {
+	font-size: 12px;
+}
+
+.tabledb {
+	border: 1px solid #59b7e5;
+	height: 180px;
+}
+
+.tabledb td {
+	color: #666;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+
+.tabledb td a:link {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.tabledb td a:visited {
+	color: #006699;
+}
+
+.tabledb td a:activeactive {
+	color: #006699;
+}
+
+.tabledb td a:hover {
+	color: #ff6699;
+}
+
+A {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #006699;
+	TEXT-DECORATION: none;
+}
+
+A:hover {
+	COLOR: #FF3300;
+	TEXT-DECORATION: underline;
+}
+
+A:VISITED {
+	COLOR: #003399;
+	TEXT-DECORATION: none;
+}
+
+a.lblue:link {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	color: #0066CC;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+
+.table_r {
+	float: right;
+	width: 320px;
+}
+
+a.lred:link {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	color: #ff3300;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+
+a.lgreen:link {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	color: #336633;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+
+a.lgray:link {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	color: #999;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+
+.dotgray3 {
+	background: url(../images/imgIndex/dot_gray.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 32px;
+	line-height: 30px;
+	font-size: 12px;
+	background-color: expression(this .             rowIndex %             2 ==             0
+		? 
+		          
+		  'F6F6F6' :        
+		    'FFFFFF')
+}
+
+.warntitle {
+	background: url(../images/imgIndex/trbg.gif);
+	height: 33px;
+	TEXT-ALIGN: center;
+}
+
+.warnList {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background-color: expression(this .             rowIndex %             2 ==             0
+		? 
+		          
+		  'd2eaf1' :        
+		    'FFFFFF')
+}
+
+.leftgray1 {
+	background: url(../images/imgIndex/dot_gray.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 22px;
+	line-height: 26px;
+	font-size: 12px;
+	background-color: expression(this .             rowIndex %             2 ==             0
+		? 
+		          
+		  'F6F6F6' :        
+		    'FFFFFF')
+}
+
+.tablegray {
+	border: 2px solid #fbeff0;
+	height: 40px;
+	background-color: #f7f6f6;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 99%;
+	font-size: 12px;
+}
+
+.tablegray td {
+	color: #006699;
+	padding-top: 5px;
+	padding-left: 10px;
+	line-height: 15px;
+}
+
+.tablegray td a:link {
+	color: #006699;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.tablegray td a:visited {
+	color: #006699;
+}
+
+.tablegray td a:activeactive {
+	color: #006699;
+}
+
+.tablegray td a:hover {
+	color: #ff6699;
+}
+
+.two {
+	width: 99%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.two fieldset {
+	display: block;
+	border: 1px solid #cacaca;
+	padding: 10px;
+	font-family: verdana, sans-serif;
+	margin-bottom: 5px;
+	line-height: 120%;
+	font-size: 12px;
+}
+
+.two fieldset:hover {
+	border: 1px solid #cacaca;
+}
+
+.two fieldset {
+	border: 1px solid #cacaca;
+}
+
+.two legend {
+	border: 1px solid #cacaca;
+	font-family: "Courier New", Courier, mono;
+	color: #333;
+	font-size: 14px;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 5px;
+	padding: 5px 10px 5px 10px;
+	background-image: url(../images/imgIndex/legendbg.jpg)
+}
+
+.table_c {
+	float: center;
+}
+
+.table_btn {
+	border-left: 1px solid #CACACA;
+	border-top: 1px solid #CACACA;
+	width: 99%;
+	background-color: #FFFFFF;
+	margin-left: 5px;
+	border: 0px solid #fff;
+}
+
+.table_b {
+	border-left: 1px solid #CACACA;
+	border-top: 1px solid #CACACA;
+	width: 99%;
+	background-color: #FFFFFF;
+	margin-left: 5px;
+}
+
+.table_b td {
+	border-right: 1px solid #CACACA;
+	border-bottom: 1px solid #CACACA;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.table_b_th {
+	border-right: 1px solid #aad3f9;
+	border-bottom: 1px solid #aad3f9;
+	padding: 2px;
+	text-align: right;
+	background-image: url(../images/imgIndex/thbg.jpg);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.th_unline {
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 2px;
+	text-align: left;
+	background-image: url(../images/imgIndex/thbg.jpg);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.unline {
+	border: 1px solid #cacaca;
+	background-color: #e3f4e8;
+	height: 60px;
+}
+
+.unline table {
+	border: 0px;
+	padding: 2px;
+	text-align: left;
+	background-color: #e3f4e8;
+	font-size: 12px;
+	font-weight: bold;
+	height: 100%;
+}
+
+.unline table td {
+	border: 0px;
+	padding: 2px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.r {
+	float: right;
+	width: 70%;
+}
+
+.b_blue {
+	background-color: #B7DDE5;
+}
+
+.b_gray {
+	TEXT-ALIGN: center;
+	height: 15px;
+	background-color: expression(this .       rowIndex %       2 ==         0 ?        
+		'ffebed' : 
+		    
+		  'FFFFFF');
+}
+
+.b_darkblue {
+	background-color: #e03543;
+	color: #fff;
+	font-size: 12pt;
+	text-align: center;
+	font-weight: bold;
+}
+
+.b_title {
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+.b_title td {
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+.CASETITLE {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #FF00FF
+}
+
+.VIPTITLE {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #FF0000
+}
+
+/* 添加 */
+.btnadd {
+	background-image: url(../images/imgIndex/add.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 请示 */
+.btnask {
+	background-image: url(../images/imgIndex/ask.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 投诉 */
+.btncomplaint {
+	background-image: url(../images/imgIndex/complaint.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 摘牌 */
+.btnzp {
+	background-image: url(../images/imgIndex/zp.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 上传 */
+.btnupload {
+	background-image: url(../images/imgIndex/upload.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 查询 */
+.btnsearch {
+	background-image: url(../images/imgIndex/search.gif);
+	height: 21px;
+	width: 50px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 保存 */
+.btnsave {
+	background-image: url(../images/imgIndex/save.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 返回 */
+.btnback {
+	background-image: url(../images/imgIndex/bak.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 材料信息 */
+.btnstuff {
+	background-image: url(../images/imgIndex/cl.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 统计 */
+.btnstat {
+	background-image: url(../images/imgIndex/tj.gif);
+	height: 21px;
+	width: 50px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 发起督办 */
+.btnsupervise {
+	background-image: url(../images/imgIndex/fqdb.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 图形展示 */
+.btnshow {
+	background-image: url(../images/imgIndex/txzs.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 文字描述 */
+.btndescribe {
+	background-image: url(../images/imgIndex/wzms.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 权力变更对比 */
+.btnapplylog {	
+	background-image: url(../images/imgIndex/applylog.jpg);
+	width: 126;
+	height: 24px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 进入特殊程序 */
+.btnspecial {	
+	background-image: url(../images/imgIndex/special.jpg);
+	width: 126;
+	height: 24px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.btnspecialfinish {	
+	background-image: url(../images/imgIndex/wctscx.gif);
+	width: 126;
+	height: 24px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 打印 */
+.btnprint {
+	background-image: url(../images/imgIndex/print.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 导出 */
+.btnexport {
+	background-image: url(../images/imgIndex/export.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 注销 */
+.btnlogout {
+	background-image: url(../images/imgIndex/zhux.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 全选 */
+.btnselAll {
+	background-image: url(../images/imgIndex/quanxuan.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 取消 */
+.btncancel {
+	background-image: url(../images/imgIndex/cancel.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 修改 */
+.btnmodify {
+	background-image: url(../images/imgIndex/xiug.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 提交 */
+.btnsubmit {
+	background-image: url(../images/imgIndex/submit.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 删除 */
+.btndelete {
+	background-image: url(../images/imgIndex/del.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 跟踪 */
+.btntrack {
+	background-image: url(../images/imgIndex/gz.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 列表 */
+.btnlist {
+	background-image: url(../images/imgIndex/list.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.table_r {
+	float: right;
+	width: 320px;
+}
+
+/* 查找 */
+.btnfind {
+	background-image: url(../images/imgIndex/cz.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 左移1 */
+.btnleft {
+	background-image: url(../images/imgIndex/left.gif);
+	height: 20px;
+	width: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 左移2 */
+.btnleft2 {
+	background-image: url(../images/imgIndex/left2.gif);
+	height: 20px;
+	width: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 右移 */
+.btnright {
+	background-image: url(../images/imgIndex/right.gif);
+	height: 20px;
+	width: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 右移2 */
+.btnright2 {
+	background-image: url(../images/imgIndex/right2.gif);
+	height: 20px;
+	width: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 回复 */
+.btnrevert {
+	background-image: url(../images/imgIndex/bf.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 发送 */
+.btnsend {
+	background-image: url(../images/imgIndex/fas.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 权限设置 */
+.btnsetting {
+	background-image: url(../images/imgIndex/qxsz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 转发 */
+.btntransmit {
+	background-image: url(../images/imgIndex/zf.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 返回列表 */
+.btnbacklist {
+	background-image: url(../images/imgIndex/fh.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.btn {
+	border: 1px solid #afe7fa;
+	font-size: 12px;
+	color: #000;
+	background-image: url(../images/imgIndex/btnbg.jpg);
+	height: 23px;
+	line-height: 21px;
+}
+
+.btnbegin {
+	background-image: url(../images/imgIndex/bebackground.gif);
+	height: 56px;
+	width: 136px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+
+}
+
+/* 清空 */
+.btnclear {
+	background-image: url(../images/imgIndex/qk.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 重置 */
+.btnreset {
+	background-image: url(../images/imgIndex/rese.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 设置 */
+.btnset {
+	background-image: url(../images/imgIndex/sz.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 提交文档 */
+.btnupdoc {
+	background-image: url(../images/imgIndex/tjwd.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 正常步骤 */
+.btnnormal {
+	background-image: url(../images/imgIndex/zcbz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 延长项目承诺时间 */
+.btndelay {
+	background-image: url(../images/imgIndex/ycxm.jpg);
+	height: 24px;
+	width: 139px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 编辑审查意见书 */
+.btnedit {
+	background-image: url(../images/imgIndex/bjsc.jpg);
+	height: 24px;
+	width: 124px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 编缉受理通知书 */
+.btAedit {
+	background-image: url(../images/imgIndex/sltzs.JPG);
+	height: 24px;
+	width: 170px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 编缉受理通知书 */
+.btUAedit {
+	background-image: url(../images/imgIndex/bltzs.JPG);
+	height: 24px;
+	width: 170px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 编缉许可决定书 */
+.btCdedit {
+	background-image: url(../images/imgIndex/bjxk.gif);
+	height: 24px;
+	width: 126px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 编缉不予许可决定书 */
+.btUCdedit {
+	background-image: url(../images/imgIndex/bjbyxk.gif);
+	height: 24px;
+	width: 161px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 提交下一步 */
+.btnjsnext {
+	background-image: url(../images/imgIndex/tjnext.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 退回上一步 */
+.btnbackbefore {
+	background-image: url(../images/imgIndex/thsyb.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 设置时间 */
+.btnsettime {
+	background-image: url(../images/imgIndex/szsj.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 上传材料 */
+.btnupstuff {
+	background-image: url(../images/imgIndex/sccl.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 退回 */
+.btngoback {
+	background-image: url(../images/imgIndex/th.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 关闭 */
+.btnclose {
+	background-image: url(../images/imgIndex/gb.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 挂起 */
+.btnhangup {
+	background-image: url(../images/imgIndex/gq.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 同步 */
+.btnsync {
+	background-image: url(../images/imgIndex/tb.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 禁用 */
+.btnforbid {
+	background-image: url(../images/imgIndex/jy.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 启用 */
+.btnstart {
+	background-image: url(../images/imgIndex/qy.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 添加流程定义 */
+.btnaddflow {
+	background-image: url(../images/imgIndex/tjlcdy.jpg);
+	height: 24px;
+	width: 120px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 查看流程定义 */
+.btnviewflow {
+	background-image: url(../images/imgIndex/cklcdy.jpg);
+	height: 24px;
+	width: 120px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 重新定义流程 */
+.btnnewlyflow {
+	background-image: url(../images/imgIndex/cxdylc.jpg);
+	height: 24px;
+	width: 120px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 根据已有项目定义 */
+.btncopyflow {
+	background-image: url(../images/imgIndex/gjyyxmdy.jpg);
+	height: 24px;
+	width: 150px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 费用定义 */
+.btnchargedef {
+	background-image: url(../images/imgIndex/fydy.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 添加步骤 */
+.btnaddstep {
+	background-image: url(../images/imgIndex/tjbz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 删除步骤 */
+.btndelstep {
+	background-image: url(../images/imgIndex/scbz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 添加工作 */
+.btnaddwork {
+	background-image: url(../images/imgIndex/tjgz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 删除工作 */
+.btndelwork {
+	background-image: url(../images/imgIndex/scgz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/*年检*/
+.btnnj {
+	background-image: url(../images/imgIndex/nj.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/*离职*/
+.btnlz {
+	background-image: url(../images/imgIndex/lz.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/*遗失*/
+.btnYS {
+	background-image: url(../images/imgIndex/ys.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/*收缴*/
+.btnSJ {
+	background-image: url(../images/imgIndex/sj.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/*调离*/
+.btnDL {
+	background-image: url(../images/imgIndex/dl.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 设置自由裁量 */
+.btnsetFUD {
+	background-image: url(../images/imgIndex/szzycl.jpg);
+	height: 24px;
+	width: 120px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 完成 */
+.btncomplete {
+	background-image: url(../images/imgIndex/wc.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 查看 */
+.btnview {
+	background-image: url(../images/imgIndex/view.jpg);
+	height: 24px;
+	width: 72px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 补充材料 */
+.btnaddstuff {
+	background-image: url(../images/imgIndex/bdcl.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 不进行二次讨论 */
+.btnnosecond {
+	background-image: url(../images/imgIndex/bjxectl.jpg);
+	height: 24px;
+	width: 150px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 保存执行情况并申请结案 */
+.btnexecute {
+	background-image: url(../images/imgIndex/bczxqk.jpg);
+	height: 24px;
+	width: 190px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 案件办理结束 */
+.btnendcase {
+	background-image: url(../images/imgIndex/ajbljs.jpg);
+	height: 24px;
+	width: 120px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 详细信息 */
+.btnDetail {
+	background-image: url(../images/imgIndex/xxxx.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 证据清单 */
+.btnAffix {
+	background-image: url(../images/imgIndex/zjqd.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 案件处罚信息 */
+.btnPunish {
+	background-image: url(../images/imgIndex/ajcfxx.jpg);
+	height: 24px;
+	width: 125px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 案件卷宗 */
+.btnDossier {
+	background-image: url(../images/imgIndex/ajjz.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 恢复办件 */
+.btnResume {
+	background-image: url(../images/imgIndex/hfbj.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 环节修改 */
+.btnhjxg {
+	background-image: url(../images/imgIndex/hjxg.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+/* 步骤添加 */
+.btnbztj {
+	background-image: url(../images/imgIndex/bztj.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.btnblc {
+	background-image: url(../images/imgIndex/nblct.jpg);
+	height: 24px;
+	width: 112px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+
+.btyxlc {
+	background-image: url(../images/imgIndex/1.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+.btbzlc {
+	background-image: url(../images/imgIndex/2.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+.btlc {
+	background-image: url(../images/imgIndex/lc.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+.btnhylct {
+	background-image: url(../images/imgIndex/hylct.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/* 内部流程图 */
+.btnnblct {
+	background-image: url(../images/imgIndex/nblct.jpg);
+	height: 24px;
+	width: 111px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px solid #666666;
+	cursor: hand;
+}
+/*- Menu TabsF--------------------------- */
+#tabsF {
+	float: left;
+	width: 100%;
+	font-size: 93%;
+	line-height: normal;
+	border-bottom: 3px solid #f48d29;
+}
+
+#tabsF ul {
+	margin: 0;	
+	padding:0px 10px 0 10px;
+	list-style: none;
+}
+
+#tabsF li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#tabsF a {
+	float: left;
+	background: url("../images/imgIndex/tableftJ.gif") no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 4px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#tabsF a:hover {
+	background-position: 0% -42px;
+	font-weight: bold;
+}
+
+#tabsF a span {
+	float: left;
+	display: block;
+	background: url("../images/imgIndex/tabrightJ.gif") no-repeat right top;
+	padding: 5px 15px 4px 6px;
+	color: #006699;
+	font-weight: bold;
+	font-size: 14px;
+	float: none;
+}
+
+#tabsF a:hover span {
+	color: #FFF;
+	filter: shadow(color =       red, direction =       270);
+	font-weight: bold;
+	background-position: 100% -42px;
+	font-weight: bold;
+}
+
+/*-------------------------------------------*/
+#help {
+	float: right;
+	width: 270px;
+	margin-bottom: 30px;
+}
+
+#help2 {
+	float: right;
+	width: 270px;
+	margin-bottom: 10px;
+}
+
+#help3 {
+	float: right;
+	width: 270px;
+	margin-bottom: 10px;
+}
+
+.trancdiv{
+    width: 160px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.1 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #7C7C7C;
+	vertical-align: middle;
+}
+.titlezi {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #25327E;
+	vertical-align: middle;
+}
+.display1 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #888888;
+	vertical-align: middle;
+}
+.HY {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #2C5987;
+	vertical-align: middle;
+}
+.play {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+
+.sysBack {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight:bold;
+	color:#FF6600;
+	vertical-align: middle;
+}
+
+.footStyle {
+	display: block;
+	color: #006699;
+	font-weight: bold;
+	font-size: 12px;
+	float: none;
+}
+
+.footStyle a {    
+	cursor: pointer;
+	TEXT-DECORATION: underline;
+}

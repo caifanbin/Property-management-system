@@ -1,0 +1,18 @@
+.tree-control {
+  font-family: "ËÎÌו";
+  font-size: 12px;
+}
+
+.tree-control-selected {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tree-control-unselected {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+

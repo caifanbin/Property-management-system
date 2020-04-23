@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:33061/wygl?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+      #   数据源其他配置 我们需要在配置类中配置，否则下面的加载不到
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,logback
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+  thymeleaf:
+    encoding: UTF-8
+
+  mvc:
+    static-path-pattern: /**
+
+  resources:
+    static-locations: classpath:/static/,file:${properties.uploadPath}
+  #mybatis相关配置
+mybatis:
+    mapper-locations: classpath:mybatis/mapper/*Mapper.xml
+    config-location: classpath:mybatis/mybatis-config.xml
+
+#logging:
+#  pattern:
+#    console: '%d -%msg%n'
+#  level:
+#    root: debug
+properties:
+  imgUrl: http://127.0.0.1:0000/
+  uploadPath: D:/Open4java/OpenSources/wygl/源代码/sbwygl/src/main/resources/static/upload/carImage/

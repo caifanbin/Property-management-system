@@ -1,0 +1,180 @@
+A
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #00000e;
+	TEXT-DECORATION: none
+}
+
+A:hover
+{
+	TEXT-DECORATION: underline
+}
+
+FONT
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px
+}
+
+BODY
+{
+	SCROLLBAR-FACE-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC;
+	SCROLLBAR-SHADOW-COLOR: #CCCCCC;
+	SCROLLBAR-3DLIGHT-COLOR: #CCCCCC;
+	SCROLLBAR-ARROW-COLOR: #CCCCCC;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #CCCCCC;
+        font-size: 12px
+}
+
+TABLE
+{
+	WIDTH: 100%;
+	BACKGROUND-COLOR: #999;
+}
+
+TBODY
+{
+	BACKGROUND-COLOR: #eceded;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	TEXT-ALIGN: left
+}
+
+.FTITLE
+{
+	BACKGROUND-COLOR: #CCCCCC;
+	COLOR: #000000;
+	FONT-SIZE: 14px;
+	FONT-WEIGHT: bold;
+	TEXT-ALIGN: center
+}
+.HEADINGTITLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: bold;
+	TEXT-ALIGN: center
+}
+.TDINGTiTLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: center
+}
+.TTITLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 14px;
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+	LINE-HEIGHT: 25px;
+	TEXT-ALIGN: right
+}
+.TDTITLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 14px;
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+	LINE-HEIGHT: 25px;
+	TEXT-ALIGN: right
+}
+
+.CTITLE
+{
+	FONT-FAMILY: "楷体_GB2312";
+	FONT-SIZE: 15px;
+	FONT-WEIGHT: bold;
+	COLOR: BROWN;
+}
+
+.BORDERLEFT
+{
+	BORDER: 1px #d14141 solid
+}
+
+.LISTTAB
+{
+	BACKGROUND-COLOR: #999999;
+	BORDER-TOP-WIDTH: thin;
+	BORDER-RIGHT-WIDTH: thin;
+	BORDER-BOTTOM-WIDTH: thin;
+	BORDER-LEFT-WIDTH: thin
+}
+
+.LISTHEAD
+{
+	BACKGROUND-COLOR: #b03c47
+}
+
+.INPUTFIELD
+{
+	TEXT-ALIGN: left;
+}
+.RLTABLE
+{
+	WIDTH: 100%;
+
+}
+.RLFONT
+{
+	FONT-FAMILY: "Wingdings 3";
+	FONT-SIZE: 12px
+}
+
+.CASETITLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #FF00FF
+}
+.VIPTITLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #FF0000
+}
+.CATITLE
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	COLOR: #FF0077
+}
+TTABLE
+{
+	WIDTH: 100%;
+	BACKGROUND-COLOR: #999999;
+}
+Input {
+	BACKGROUND-COLOR: #ffffff;
+        border: 1px solid #999999;
+}
+Select {
+	border: 1px solid #CCCCCC;
+}
+textarea {
+	border: 1px solid #999999;
+}
+
+.LITTLEFONT
+{
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 5px;
+}
+.BUTTONTABLE
+{
+	WIDTH: 90%;
+	BACKGROUND-COLOR: #000000;
+}
+.BUTTONTR
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	COLOR: #FFFFFF;
+	TEXT-ALIGN: center
+}
+
+.t_table{ border:1px solid #3251D8; padding:5px; }

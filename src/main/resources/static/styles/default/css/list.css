@@ -1,0 +1,32 @@
+/* CSS Document */
+body{ margin:5px; padding:5px; font-size:12px; }
+
+.b_l1{background:url(../images/corner_03.gif) no-repeat left #3251D8;  height:24px; width: 10px; }
+.b_r1{background:url(../images/corner_05.gif) no-repeat left;  height:24px; width: 10px; }
+.g_l1{background:url(../images/corner_07.gif) no-repeat right;  height:24px; width: 10px; }
+.g_r1{background:url(../images/corner_09.gif) no-repeat left;  height:24px; width: 7px; }
+.b { background:#9DCBFF; color:#FFFFFF}
+.g { background:#D3D6E6; color:#000033 }
+.t_t {background:#fff; }
+.t_table{ border:1px solid #3251D8; padding:5px; }
+
+a.btn:link {
+	color:#000;
+	text-decoration: none;
+	font-size: 14px;
+}
+a.btn:visited {
+	color:#000;
+	text-decoration: none;
+	font-size: 14px;
+}
+a.btn:active {
+	color:#000;
+	text-decoration: none;
+	font-size: 14px;
+}
+a.btn:hover {
+	color:#ff6600;
+	text-decoration: underline;
+	font-size: 14px;
+}
