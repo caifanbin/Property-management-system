@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>My JSP 'TiKuLuRu.jsp' starting page</title>
+    <link href="css/extremecomponents.css" th:href="@{/css/extremecomponents.css}" rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet" rev="stylesheet"
+          href="css/style.css" th:href="@{/css/style.css}" type="text/css" media="all" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="css/main.css" th:href="@{/css/main.css}">
+    <link rel="stylesheet" href="css/pagination.css" th:href="@{/css/pagination.css}">
+</head>
+
+<body background="beijing1/34.jpg">
+<center>
+
+    <table width="100%" border="0">
+        <tr valign="top">
+            <td height="335" colspan="2">
+                <div style="float: center">
+                    <hr style="clear:both;">
+                    <table title="费用明细" width="100%" rowsDisplayed="5"
+                           imagePath="images/table/*.gif"
+                           class="table table-bordered">
+                        <thead>
+                        <tr class="b_title" height="20">
+                            <td colspan="4">
+                                <span>住户缴费详细信息</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="18%" class="table_b_th">
+                                单据编号：
+                            </td>
+                            <td>
+                                <span >1</span>
+                            </td>
+                            <td align="right" width="18%" class="table_b_th">
+                                水费：
+                            </td>
+                            <td width="40%">
+                                <span th:text="${change.waterCase}"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="18%" class="table_b_th">
+                                住户姓名：
+                            </td>
+                            <td width="40%" >
+                                <span th:text="${change.zName}"></span>
+                            </td>
+                            <td align="right" width="18%" class="table_b_th">
+                                电费：
+                            </td>
+                            <td width="40%">
+                                <span th:text="${change.eCase}"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="18%" class="table_b_th">
+                                缴费方式：
+                            </td>
+                            <td width="40%" >
+                                <span th:text="${change.type}"></span>
+                            </td>
+                            <td align="right" width="18%" class="table_b_th">
+                                气费：
+                            </td>
+                            <td width="40%">
+                                <span th:text="${change.gascase}"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="18%" class="table_b_th">
+                                缴费总额：
+                            </td>
+                            <td width="40%">
+                                <span th:text="${change.cases}"></span>
+                            </td>
+                            <td align="right" width="18%" class="table_b_th">
+                                停车费：
+                            </td>
+                            <td width="40%" >
+                                <span th:text="${change.stopCase}"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="18%" class="table_b_th">
+                                收费人员：
+                            </td>
+                            <td width="40%">
+                                <span th:text="${change.changeName}"></span>
+                            </td>
+                            <td align="right" width="18%" class="table_b_th">
+                                维修费用：
+                            </td>
+                            <td width="40%">
+                                <span th:text="${change.mandCase}"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="18%" class="table_b_th" >
+                                缴费时间：
+                            </td>
+                            <td width="40%" >
+                                <span th:text="${change.changedate}"></span>
+                            </td>
+                            <td align="right" width="18%" class="table_b_th" >
+                                备注：
+                            </td>
+                            <td width="40%" >
+                                <span th:text="${change.remark}"></span>
+                            </td>
+                        </tr>
+
+
+                        </thead>
+                        <tfoot>
+                        <tr >
+                            <td colspan="6" align="center">
+
+                                <div id="Pagination" name="pagination" class="pagination"><!--这里显示分页--></div>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</center>
+<script src="jquery/jquery-2.1.1.min.js" th:src="@{/jquery/jquery-2.1.1.min.js}"></script>
+<script src="bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script src="script/docs.min.js" th:src="@{/script/docs.min.js}"></script>
+<script TYPE="text/javascript" src="layer/layer.js" th:src="@{/layer/layer.js}"></script>
+<script type="text/javascript" src="jquery/pagination/jquery.pagination.js" th:src="@{/jquery/pagination/jquery.pagination.js}"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".list-group-item").click(function(){
+            if ( $(this).find("ul") ) {
+                $(this).toggleClass("tree-closed");
+                if ( $(this).hasClass("tree-closed") ) {
+                    $("ul", this).hide("fast");
+                } else {
+                    $("ul", this).show("fast");
+                }
+            }
+        });
+
+    });
+
+
+</script>
+</body>
+</html>

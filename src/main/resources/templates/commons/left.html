@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        <!--
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-image: url(images/left.gif);
+        }
+        -->
+    </style>
+    <link href="css/css.css" th:href="@{/css/css.css}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css"
+          href="styles/default/css/index.css" th:href="@{/styles/default/css/index.css}">
+</head>
+<SCRIPT language=JavaScript>
+    function tupian(idt){
+        var nametu="xiaotu"+idt;
+        var tp = document.getElementById(nametu);
+        tp.src="images/ico04.gif";//图片ico04为白色的正方形
+
+        for(var i=1;i<30;i++)
+        {
+
+            var nametu2="xiaotu"+i;
+            if(i!=idt*1)
+            {
+                var tp2=document.getElementById('xiaotu'+i);
+                if(tp2!=undefined)
+                {tp2.src="images/ico06.gif";}//图片ico06为蓝色的正方形
+            }
+        }
+    }
+
+    function list(idstr){
+        var name1="subtree"+idstr;
+        var name2="img"+idstr;
+        var objectobj=document.all(name1);
+        var imgobj=document.all(name2);
+
+
+        //alert(imgobj);
+
+        if(objectobj.style.display=="none"){
+            for(i=1;i<20;i++){
+                var name3="img"+i;
+                var name="subtree"+i;
+                var o=document.all(name);
+                if(o!=undefined){
+                    o.style.display="none";
+                    var image=document.all(name3);
+                    //alert(image);
+                    image.src="images/ico04.gif";
+                }
+            }
+            objectobj.style.display="";
+            imgobj.src="images/ico03.gif";
+        }
+        else{
+            objectobj.style.display="none";
+            imgobj.src="images/ico04.gif";
+        }
+    }
+
+</SCRIPT>
+<body>
+<table th:fragment="left" width="198" border="0" cellpadding="0" cellspacing="0"
+       class="left-table01">
+    <tr>
+        <TD>
+            <table  width="100%" border="0" cellpadding="0" cellspacing="0" class="table_b">
+                <tr>
+                    <td width="207" height="55" background="images/nav01.gif">
+                        <table width="90%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="25%" rowspan="2">
+                                    <img src="images/ico02.gif" width="35" height="35" />
+                                </td>
+                                <td width="75%" height="22" class="left-font01">
+                                    您好，
+                                    <span><font size="3" th:text="${session.loginUser}"></font>,管理员</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="22" class="left-font01">
+                                    [&nbsp;
+                                    <a href="/logout" target="_top" class="left-font01">退出</a>&nbsp;]
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--  供货商管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img8" id="img8" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('8');">住户资料管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree8" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu21" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('/resident/resident_add','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'"> 添加住户信息</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="21">
+                        <img id="xiaotu22" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/resident/toResident" target="mainFrame"
+                           class="left-font03" onClick="tupian('22');">查看住户资料信息</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  供货商管理结束    -->
+
+
+
+
+
+            <!--  商品类型管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img6" id="img6" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('6');">系统管理员管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree6" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu27" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('admin/adminAdd','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'">添加管理员</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/admin/toAdminList"
+                           target="mainFrame" class="left-font03" onClick="tupian('28');">查看管理员</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  商品类型管理结束    -->
+            <!--  商品类型管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img1" id="img1" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('1');">保安管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree1" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu27" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('ba/baAdd','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'">添加保安信息</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/ba/toBaList"
+                           target="mainFrame" class="left-font03" onClick="tupian('28');">查看保安信息</a>
+                    </td>
+                </tr>
+                <td width="9%" height="20">
+                    <img id="xiaotu27" src="images/ico06.gif" width="8"
+                         height="12" />
+                </td>
+                <td width="91%">
+                    <a class="left-font03"
+                       onClick="javascript:window.open('ba/baAddPb','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                       onmouseover="this.style.cursor='hand'">新增保安排班</a>
+                </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/ba/bapbList"
+                           target="mainFrame" class="left-font03" onClick="tupian('28');">查看保安排班记录</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  商品类型管理结束    -->
+            <!--  商品类型管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img2" id="img2" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('2');">人事管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree2" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu27" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('rs/rsAdd','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'">添加物业公司员工信息</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="rs/toRsList"
+                           target="mainFrame" class="left-font03" onClick="tupian('28');">查看物业公司员工信息</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  商品类型管理结束    -->
+
+            <!--  商品管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img7" id="img7" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('7');">设备管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree7" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu17" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('chanel/chanelAdd','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'"> 添加设备信息</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu18" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/chanel/toChanelList"
+                           target="mainFrame" class="left-font03" onClick="tupian('22');">查看设备信息</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  商品管理结束    -->
+            <!--  订单管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img9" id="img9" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('9');">缴费管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+
+            <table id="subtree9" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+
+                <!--  <tr>
+                <td width="9%" height="20">
+                    <img id="xiaotu28" src="../images/ico06.gif" width="8"
+                        height="12" />
+                </td>
+                <td width="91%">
+                    <a href="../getAllCNs.action" target="mainFrame"
+                        class="left-font03" onClick="tupian('28');">查看费用明细</a>
+                </td>
+            </tr>	-->
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu27" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('change/changeAdd','newwindow','height=550,width=700,top=110,left=310,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'">缴纳费用</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/change/toChangeList" target="mainFrame"
+                           class="left-font03" onClick="tupian('28');">缴纳物业费信息查看</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  订单管理结束    -->
+
+            <!--  入库管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img10" id="img10" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('10');">住户报修管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree10" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('equip/equipAdd','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'">添加报修事项</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/equip/toEquipList" target="mainFrame"
+                           class="left-font03" onClick="tupian('28');">报修事项信息查看</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  入库管理结束    -->
+
+            <!--  出库管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img11" id="img11" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('11');">住户停车车位管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree11" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/car/carNumList" target="mainFrame"
+                           class="left-font03" onClick="tupian('28');">查看车位明细信息</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a class="left-font03"
+                           onClick="javascript:window.open('car/carOrderAdd','newwindow','height=550,width=700,top=210,left=410,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no,status=no')"
+                           onmouseover="this.style.cursor='hand'">预定小区车位</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/car/getCarOrderList" target="mainFrame"
+                           class="left-font03" onClick="tupian('28');">小区车位查看</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  出库管理结束    -->
+            <!--  商品类型管理开始    -->
+            <TABLE width="100%" border="0" cellpadding="0" cellspacing="0"
+                   class="left-table03">
+                <tr>
+                    <td height="29">
+                        <table width="85%" border="0" align="center" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td width="8%">
+                                    <img name="img17" id="img15" src="images/ico04.gif"
+                                         width="8" height="11" />
+                                </td>
+                                <td width="92%">
+                                    <a href="javascript:" target="mainFrame" class="left-font03"
+                                       onClick="list('17');">留言管理</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </TABLE>
+            <table id="subtree17" style="DISPLAY: none" width="80%" border="0"
+                   align="center" cellpadding="0" cellspacing="0"
+                   class="left-table02">
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/leaverword/getLeaverWord?type=2"
+                           target="mainFrame" class="left-font03" onClick="tupian('28');">留言信息管理</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="9%" height="20">
+                        <img id="xiaotu28" src="images/ico06.gif" width="8"
+                             height="12" />
+                    </td>
+                    <td width="91%">
+                        <a href="/leaverword/getLeaverWord?type=1"
+                           target="mainFrame" class="left-font03" onClick="tupian('28');">投诉管理</a>
+                    </td>
+                </tr>
+            </table>
+            <!--  商品类型管理结束    -->
+        </TD>
+    </tr>
+
+</table>
+</body>
+</html>

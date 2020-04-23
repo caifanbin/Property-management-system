@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css"
+          href="styles/default/css/index.css" th:href="@{/styles/default/css/index.css}">
+    <link href="css/extremecomponents.css" th:href="@{/css/extremecomponents.css}" rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet" rev="stylesheet"
+          href="css/style.css" th:href="@{/css/style.css}" type="text/css" media="all" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="css/main.css" th:href="@{/css/main.css}">
+    <title>Insert title here</title>
+
+    <TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="tablegray">
+        <TR height=28>
+            <TD background=images/title_bg1.jpg>
+                <img src="styles/default/images/imgIndex/jt3.gif" width="11"
+                     height="11">
+                当前位置：
+                <span class="fontred">修改设备信息</span>
+            </TD>
+        </TR>
+    </TABLE>
+</head>
+<body>
+
+<div class="two">
+    <fieldset>
+        <legend>设备信息</legend>
+        <form name="form2" id="updatefrom" action="/resident/updateResident"  method="post">
+            <input id="id" type="hidden" name="id" th:value="${chanel.id}" />
+
+            <table style="font-size: 12px;" width="100%" class="table_b">
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        设备名称：*
+                    </td>
+                    <td>
+                        <input id="name" type="text" name="name" th:value="${chanel.name}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        设备型号：*
+                    </td>
+                    <td>
+                        <input id="model" type="text" name="model" th:value="${chanel.model}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        设备数量 ：*
+                    </td>
+                    <td>
+                        <input id="num" type="text" name="num" th:value="${chanel.num}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        采购时间：*
+                    </td>
+                    <td>
+                        <input id="beDate" type="text" name="beDate" th:value="${chanel.beDate}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        设备说明 ：*
+                    </td>
+                    <td height="80" >
+                        <textarea rows="5" cols="30" name="mark" id="mark" th:text="${chanel.mark}" ></textarea>
+                    </td>
+                </tr>
+
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+
+            <table align="center">
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <button id="updateBtn" type="button" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> 修改</button>
+                        <button id="resetBtn" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-refresh"></i> 重置</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</div>
+<script src="jquery/jquery-2.1.1.min.js" th:src="@{/jquery/jquery-2.1.1.min.js}"></script>
+<script src="bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script src="script/docs.min.js" th:src="@{/script/docs.min.js}"></script>
+<script TYPE="text/javascript" src="layer/layer.js" th:src="@{/layer/layer.js}"></script>
+<script type="text/javascript">
+    $("#updateBtn").click(function () {
+        var id = $("#id").val();
+        var model = $("#model").val();
+        var name = $("#name").val();
+        var num = $("#num").val();
+        var beDate = $("#beDate").val();
+        var mark = $("#mark").val();
+        $.ajax({
+            type:"post",
+            data:{
+                "id":id,
+                "name":name,
+                "model":model,
+                "num":num,
+                "beDate":beDate,
+                "mark":mark
+            },
+            url:"/chanel/updateChanel",
+            beforeSend:function () {
+                return true;
+            },
+            success:function (result) {
+                if(result.success){
+                    window.location.href="/chanel/toChanelList";
+                }else {
+                    layer.msg(result.message,{time:1000,icon:5,shift:6});
+                }
+            },
+            error:function () {
+                alert("修改失败啦");
+            }
+
+        });
+    });
+    $("#resetBtn").click(function () {
+        $("#updatefrom")[0].reset();
+    })
+</script>
+</body>
+</html>

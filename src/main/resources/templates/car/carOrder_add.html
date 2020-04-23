@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css"
+          href="styles/default/css/index.css" th:href="@{/styles/default/css/index.css}">
+    <link href="css/extremecomponents.css" th:href="@{/css/extremecomponents.css}" rel="stylesheet"
+          type="text/css" />
+    <link rel="stylesheet" rev="stylesheet"
+          href="css/style.css" th:href="@{/css/style.css}" type="text/css" media="all" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="css/main.css" th:href="@{/css/main.css}">
+    <title>Insert title here</title>
+
+    <TABLE width="100%" border="0" cellpadding="0" cellspacing="0" class="tablegray">
+        <TR height=28>
+            <TD background=images/title_bg1.jpg>
+                <img src="styles/default/images/imgIndex/jt3.gif" width="11"
+                     height="11">
+                当前位置：
+                <span class="fontred">预订车位界面</span>
+            </TD>
+        </TR>
+    </TABLE>
+</head>
+<body>
+
+<div class="two">
+    <fieldset>
+        <legend>预订车位</legend>
+        <form name="savefrom" id="savefrom"   method="post" enctype="multipart/form-data">
+            <input id="userid" type="hidden" name="userid" th:value="${session.loginUser}"/>
+            <table style="font-size: 12px;" width="100%" class="table_b">
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        住户姓名：*
+                    </td>
+                    <td>
+                        <input id="username" type="text" name="username" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        住户身份证 ：*
+                    </td>
+                    <td>
+                        <input id="persionNo" type="text" name="persionNo" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        联系电话：*
+                    </td>
+                    <td>
+                        <input id="telephone" type="text" name="telephone" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        住户住址：*
+                    </td>
+                    <td>
+                        <input id="address" type="text" name="address" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right" class="table_b_th" width="24%">
+                        预留车位号：*
+                    </td>
+                    <td>
+                        <input id="carAddress" type="text" name="carAddress" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right" width="30%" class="table_b_th">
+                        汽车照片上传：*
+                    </td>
+                    <td>
+                        <!--<div class="form-group">
+                            <input onchange="changepic(this)" id="carimg" name="carimg" type="file" class="filepath" >
+                            <br>
+                            <img style="width: 300px;height: 400px" id="show" src="../images/pic.jpg">
+                        </div>-->
+
+                        <p><img id="show" style="width: 250px;height: 300px"  src="../images/timg.jpg" onclick="fileSelect();"></p>
+                        <input type="file" name="carimg" id="carimg" onchange="changepic(this);" style="display:none;">
+
+                    </td>
+                </tr>
+
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+
+            <table align="center">
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <button id="saveBtn" type="button" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> 保存</button>
+                        <button id="resetBtn" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-refresh"></i> 重置</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</div>
+<script src="jquery/jquery-2.1.1.min.js" th:src="@{/jquery/jquery-2.1.1.min.js}"></script>
+<script src="bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script src="script/docs.min.js" th:src="@{/script/docs.min.js}"></script>
+<script TYPE="text/javascript" src="layer/layer.js" th:src="@{/layer/layer.js}"></script>
+<script language="JavaScript" src="../scripts/datepicker/WdatePicker.js" th:src="@{/scripts/datepicker/WdatePicker.js}" type="text/JavaScript"></script>
+<script type="text/javascript" src="jquery/jquery-form/jquery-form.min.js"th:src="@{/jquery/jquery-form/jquery-form.min.js}"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+
+        $("#saveBtn").click(function () {
+            var options={
+
+                url:"/car/saveCarOrder",
+                beforeSubmit :function () {
+                    return true;
+                },
+                success:function (result) {
+                    if(result.success){
+                        layer.msg("预定信息上传成功",{time:1000,icon:6});
+
+                        window.location.href="/car/goCarOrderList";
+                    }else {
+                        layer.msg("广告保存失败",{time:1000,icon:5,shift:6});
+                    }
+                }
+            };
+            $("#savefrom").ajaxSubmit(options);
+            return ;
+
+            /*$("#updateform").attr("action","${APP_PATH}/advert/save.do");
+            $("#updateform").submit();*/
+        });
+    });
+
+    $("#resetBtn").click(function () {
+        $("#savefrom")[0].reset();
+    })
+
+    function fileSelect() {
+        document.getElementById("carimg").click();
+
+    };
+    function changepic() {
+
+        var reads= new FileReader();
+
+        f=document.getElementById('carimg').files[0];
+
+        reads.readAsDataURL(f);
+
+        reads.onload=function (e) {
+
+            document.getElementById('show').src=this.result;
+
+        };
+
+    }
+</script>
+</body>
+</html>
